@@ -12,7 +12,9 @@
 
 1.  ssh into your instance - obtain addresses from AWS administrator
 
-`ssh -i "myaws.pem" ubuntu@ec2-34-221-171-5.us-west-2.compute.amazonaws.com`
+`ssh -i "myaws.pem" ubuntu@ec2-xxxxxx.us-west-2.compute.amazonaws.com`
+
+REPLACE THE ADDRESS WITH THE ADDRESS YOUR ADMIN GAVE YOU.
 
 ## Install Anaconda
 2.  Install Anaconda on your aws instance.
