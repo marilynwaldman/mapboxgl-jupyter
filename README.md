@@ -138,7 +138,8 @@ c.NotebookApp.password = u'sha1:057a582a99999:92684a48df8b4396bc27a81995541f9304
 c.NotebookApp.port = 8888
 ```
 
-4.  You can now load your notebooks from http.
+ 
+4. You can now load your notebooks from http.
 
 Start jupyter notebooks
 
@@ -239,7 +240,7 @@ Change directories to mapboxgl-jupyter and restart the notebooks
 (base) ubuntu@ip-172-31-6-131:~/mapboxgl-jupyter$ jupyter notebook
 ````
 
-Once in Jupyter - go to the examples directory.
+Once in Jupyter, go to the examples directory.
 
 
 
