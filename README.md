@@ -1,4 +1,4 @@
-# Install mapboxgl jupyter on on AWS
+# Install mapboxgl jupyter  on AWS
 
 ## ssh to your  aws instance
 
