@@ -1,6 +1,6 @@
-# to install on aws
+# Install mapboxgl jupyter on on AWS
 
-## ssh to you instance
+## ssh to your  aws instance
 
 1.  Obtain your aws security key and place it in your home directory on your local computer
 2.  Change the permissions on the key
@@ -10,7 +10,7 @@
     Note:  You may place this key in your .ssh directory and make the proper adjustments when
     you ssh to your aws instance
 
-1.  ssh into your instance
+1.  ssh into your instance - obtain addresses from AWS administrator
 
 `ssh -i "myaws.pem" ubuntu@ec2-34-221-171-5.us-west-2.compute.amazonaws.com`
 
