@@ -174,6 +174,76 @@ check to see if node is installed:
 
 ## Install mapboxgl-jupyter
 
+1.  Install mapboxgl from the home directory
+
+```$xslt
+(base) ubuntu@ip-172-31-6-131:~$ cd
+(base) ubuntu@ip-172-31-6-131:~$ pip install mapboxgl
+```
+
+2.  Obtain mapboxgl-jupyter
+
+```$xslt
+     git clone https://github.com/mapbox/mapboxgl-jupyter.git
+     cd mapboxgl-jupyter
+```
+
+3.  Start Jupyter Notebooks
+
+```$xslt
+jupyter notebook
+```  
+
+4. Open the browser and issue
+
+`http://ec2-52-43-206-172.us-west-2.compute.amazonaws.com:8888'
+
+Replacing the ec2-52... with the address your adminstrator provided.
+
+## Running the examples.
+
+To run the examples you will have to sign up for an account on Mapbox and obtain a token.
+
+1.  Exit out of the notebooks - <cntl c>
+
+2.  Edit the .bashrc profile, exporting MAPBOX_ACCESS_TOKEN=<your token>
+
+```$xslt
+cd
+vi .bashrc
+```
+
+In vi, go to the end of the file by typing `G`.  Then type `i` for insert.
+
+`export MAPBOX_ACCESS_TOKEN=pk.eyJ1IjoibWR3YWxkbWFu   ......  `
+
+Type `esc` to exit insert mod and save the file `ZZ`.
+
+Source bash
+
+`source ~/.bashrc`
+
+Confirm the new variable
+
+```$xslt
+(base) ubuntu@ip-172-31-6-131:~$ cd
+(base) ubuntu@ip-172-31-6-131:~$ echo $MAPBOX_ACCESS_TOKEN
+```
+
+You should see your Mapbox token.
+
+Change directories to mapboxgl-jupyter and restart the notebooks
+
+````$xslt
+(base) ubuntu@ip-172-31-6-131:~$ cd mapboxgl-jupyter
+(base) ubuntu@ip-172-31-6-131:~/mapboxgl-jupyter$ jupyter notebook
+````
+
+Once in Jupyter - go to the examples directory.
+
+
+
+
 
 
 
