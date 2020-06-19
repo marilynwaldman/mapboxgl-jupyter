@@ -57,6 +57,29 @@ PREFIX=/home/ubuntu/anaconda3
 
 ```
 
+Eventually the installer will ask you if you want to set up an environment,  say 'yes'
+
+```$xslt
+installing: pywavelets-1.0.2-py37hdd07704_0 ...
+installing: scipy-1.2.1-py37h7c811a0_0 ...
+installing: bkcharts-0.2-py37_0 ...
+installing: dask-1.1.4-py37_1 ...
+installing: patsy-0.5.1-py37_0 ...
+installing: pytables-3.5.1-py37h71ec239_0 ...
+installing: pytest-astropy-0.5.0-py37_0 ...
+installing: scikit-image-0.14.2-py37he6710b0_0 ...
+installing: scikit-learn-0.20.3-py37hd81dba3_0 ...
+installing: astropy-3.1.2-py37h7b6447c_0 ...
+installing: statsmodels-0.9.0-py37h035aef0_0 ...
+installing: seaborn-0.9.0-py37_0 ...
+installing: anaconda-2019.03-py37_0 ...
+installation finished.
+Do you wish the installer to initialize Anaconda3
+by running conda init? [yes|no]
+[no] >>> yes
+```
+
+
 
 ## Set up Jupyter notebooks with an empty password
 
@@ -64,16 +87,35 @@ PREFIX=/home/ubuntu/anaconda3
 
    `cd`
    
-   enter the python interrupter and create the password.
+   type `which python`
    
-   ```$xslt
-      from IPython.lib import passwd
-      passwd()
-```
+   if you don't see 
+   
+   /home/ubuntu/anaconda3/bin/python
+   
+   exit the instance by typing <cntl>d and then ssh back in.
+   
+   
+   
+   Enter the python interrupter.
+   `python`
+    
+    and create the password.
+    ```
+    >>> from IPython.lib import passwd
+    >>> passwd()
+    Enter password: 
+    Verify password: 
+    'sha1:3506e7831dd5:822f9372e0c42fbe165ef65d0c8dda33846a8075'
+    >>> exit()
+    ```
+    
+   
+  
 USE THE EMPTY STRING FOR THE PASSWORD. 
 SAVE THE PASSWORD HASH!!!  It looks like:
 
-sha1:057a582a99999:92684a48df8b4396bc27a81995541f930499999
+`sha1:.....`
 
 7.  Generate a Jupyter configuration file
 
