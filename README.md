@@ -30,11 +30,12 @@ REPLACE THE ADDRESS WITH THE ADDRESS YOUR ADMIN GAVE YOU.
      
 3.  Download the Anaconda code
 
-`wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh`  
+`wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh`
 
 4.  Unpack the shell installer - this will install Anaconda
 
-`bash Anaconda3-2019.03-Linux-x86_64.sh`   
+
+`bash Anaconda3-2020.02-Linux-x86_64.sh`     
 
 You will be prompted to agree to terms and asked where to install.  Say 'yes' and 'enter'
 
